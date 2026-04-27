@@ -1,0 +1,796 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+
+    <link rel="stylesheet" href="product1.css" />
+
+    <!-- css-boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!--icon-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          >FrozenF <span style="color: #f97a00">oo</span>ds</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav me-3">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="index.html"
+                style="text-decoration: underline"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product1.html">products</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primaryME">Order Now</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!---inner-navbar-->
+    <div class="container-fluid">
+      <div class="container mt-3">
+        <div
+          class="icon1"
+          style="display: flex !important; align-items: center"
+        >
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="
+                background-color: transparent;
+                color: #083503;
+                border: none;
+              "
+            >
+              <span><i class="bi bi-list"></i> Shop by categories</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#frozenmeat">Frozen meat</a>
+              </li>
+              <li><a class="dropdown-item" href="#seafoods">Sea foods</a></li>
+              <li><a class="dropdown-item" href="#vegetable">Vegetables</a></li>
+            </ul>
+          </div>
+
+          <!-- Search Bar -->
+          <form class="search-bar" style="flex-grow: 1">
+            <input
+              class="seachbar"
+              type="search"
+              placeholder="Search your product here "
+              aria-label="Search"
+              style="
+                width: 50vw;
+                padding: 10px;
+                border-radius: 20px;
+                border: none;
+                background-color: white;
+                color: black;
+              "
+            />
+          </form>
+
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="
+                background-color: transparent;
+                color: #083503;
+                border: none;
+              "
+            >
+              <i class="bi bi-person-add" style="font-size: 1.4rem"></i>
+            </button>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="sign.html">sign up</a></li>
+              <li><a class="dropdown-item" href="#">others</a></li>
+            </ul>
+          </div>
+
+          <!-- Cart Icon -->
+          <!-- <div class="cart" style="font-size: 20px">
+            <i class="bi bi-cart-fill"></i>
+          </div> -->
+          <a href="#" class="cart-icon">
+    <i class="bi bi-cart"></i>
+    <span id="cartCount">0</span>
+</a>
+
+        </div>
+      </div>
+    </div>
+    <!----inner navbar end-->
+
+    <div class="product-section">
+      <div class="title">
+        <h2
+          style="
+            margin-left: 10px;
+            font-size: 3rem;
+            font-weight: 900;
+            color: #16610e;
+          "
+        >
+          Products
+        </h2>
+      </div>
+    </div>
+
+    <!----frozen meat-->
+    <div class="container-fluid ">
+      <div class="row row-cols-1 row-cols-md-4 g-4" id="frozenmeat">
+        <div class="col h-100">
+          <div class="card-side mt-3">
+            <div class="card-body" style="color: #16610e">
+              <h5  class="card-title" style="color: #16610e; font-size: 20px; font-weight: 700">
+                Shop by categories
+              </h5>
+              <div class="cate"style="display: flex; justify-content: space-between" >
+                <p class="card-text">New arivals</p>
+                <span><i class="bi bi-plus-lg"></i></span>
+              </div>
+              <div  class="cate"  style="display: flex; justify-content: space-between">
+                <p class="card-text">Frozen Meat</p>
+                <span><i class="bi bi-plus-lg"></i></span>
+              </div>
+              <div class="cate"  style="display: flex; justify-content: space-between">
+                <p class="card-text">Sea Foods</p>
+                <span><i class="bi bi-plus-lg"></i></span>
+              </div>
+              <div class="cate" style="display: flex; justify-content: space-between" >
+                <p class="card-text">Vegetables</p>
+                <span><i class="bi bi-plus-lg"></i></span>
+              </div>
+
+              <h5 class="card-title" style="color: #16610e; font-size: 20px; font-weight: 700"  >
+                Shop per kilogram
+              </h5>
+              <div class="shop-size">
+                <ul class="size">
+                  <li>1/2 kg</li>
+                  <li>1 kg</li>
+                  <li>10 kg</li>
+                  <li>carton</li>
+                  <li>others</li>
+                </ul>
+              </div>
+              <h5 class="card-title"  style="color: #16610e; font-size: 20px; font-weight: 700">
+                Shop by price
+              </h5>
+              <div class="shop-price">
+                <p>$0.00 - $5.00</p>
+                <p>$5.00 - $10.00</p>
+                <p>$10.00 - $20.00</p>
+                <p>$20.00 - $30.00</p>
+                <p>$30.00 - 40.00</p>
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="./assets/images/laps.jpg"class="card-img-top" alt="..."/>
+            <div class="card-body text-left">
+              <h5 class="card-title"style="color: #16610e; font-size: 1, 25rem; font-weight: 700" >
+                Frozen chicken laps
+              </h5>
+              <p class="card-text" style="color: #083503">
+                With our expertly frozen chicken laps, you can create wholesome,
+                tasty meals in minutes — straight from the freezer to your pan.
+              </p>
+              <div class="size">
+                <button>1kg Pack</button>
+                <button style="padding-right: 10px">Halal</button>
+              </div>
+              <div
+                class="price-section" style="  display: flex; justify-content: space-between; align-items: center; margin-top: 15p  " >
+                <div class="pricing">
+                  <p  class="price"   style="color: #16610e; font-size: 1rem; font-weight: 700" >
+                    $7.20
+                  </p>
+                  <small class="text-muted" style="color: #083503 !important"  >
+                    + $2 delivery</small >
+                </div>
+                <!-- <button class="btn btn-cart">
+                  <i class="bi bi-cart"></i> Add to Cart
+                </button> -->
+                <button class="btn btn-cart"
+onclick="addToCart('Frozen chicken laps', 7.20, './assets/images/laps.jpg')">
+    <i class="bi bi-cart"></i> Add to Cart
+</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img   src="./assets/images/chicken feet.jpg" class="card-img-top" alt="..."style="height: 35vh" />
+            <div class="card-body text-left">
+              <h5 class="card-title" style="color: #16610e; font-size: 1, 25rem; font-weight: 700">
+                chicken feet
+              </h5>
+              <p class="card-text" style="color: #083503; font-size: 14px">
+                Sourced from healthy poultry and frozen at peak quality to bring
+                you the rich, comforting taste loved in home-cooked meals around
+                the world.
+              </p>
+              <div class="size">
+                <button>1kg Pack</button>
+                <button style="padding-right: 10px">Halal</button>
+              </div>
+              <div class="price-section" style=" display: flex;  justify-content: space-between; align-items: center;    margin-top: 15px   " >
+                <div class="pricing">
+                  <p class="price"style="color: #16610e; font-size: 1rem; font-weight: 700" >
+                    $5.20
+                  </p>
+                  <small class="text-muted" style="color: #083503 !important"  >
+                    + $2 delivery</small >
+                </div>
+                <!-- <button class="btn btn-cart" >
+                  <i class="bi bi-cart"></i> Add to Cart
+                </button> -->
+                <button class="btn btn-cart"
+               onclick="addToCart('Chicken feet', 5.20, './assets/images/chicken feet.jpg')">
+              <i class="bi bi-cart"></i> Add to Cart
+               </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./assets/images/gz.jpg" class="card-img-top"alt="..." style="height: 35vh"/>
+            <div class="card-body text-left">
+              <h5 class="card-title"   style="color: #16610e; font-size: 1, 25rem; font-weight: 700" >
+                Gizzard chiicken
+              </h5>
+              <p class="card-text" style="font-size: 14px; color: #083503">
+                Our frozen chicken gizzards are rich, tender, and packed with
+                nutrients — bringing the authentic flavor of home-cooked dishes
+                straight to your kitchen.
+              </p>
+              <div class="size">
+                <button>1kg Pack</button>
+                <button style="padding-right: 10px">Halal</button>
+              </div>
+              <div class="price-section" style=" display: flex;  justify-content: space-between;  align-items: center; margin-top: 15px;  "  >
+                <div class="pricing">
+                  <p class="price"  style="color: #16610e; font-size: 1rem; font-weight: 700" >
+                    $6.00
+                  </p>
+                  <small class="text-muted" style="color: #083503 !important"> 
+                    + $2 delivery</small >
+                </div>
+                <button class="btn btn-cart">
+                  <i class="bi bi-cart"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---frozen meat end-->
+
+    <!--seafoods-->
+    <div class="container-fluid   mt-0  ">
+      <div class="row row-cols-1 row-cols-md-4 g-4" id="seafoods">
+        <div class="col">
+          <div class="card-side mt-3">
+            <div class="card-body" style="color: gold; font-weight: 1000">
+              <h5
+                class="card-title"
+                style="color: #16610e; font-size: 20px; font-weight: 700"
+              >
+                Review
+              </h5>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1">
+                  ★★★★★
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck2"
+                />
+                <label class="form-check-label" for="defaultCheck2">
+                  ★★★★
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1">
+                  ★★★
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck2"
+                />
+                <label class="form-check-label" for="defaultCheck2"> ★★ </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck2"
+                />
+                <label class="form-check-label" for="defaultCheck2"> ★ </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./assets/images/fish 1.jpg"
+              class="card-img-top"
+              alt="..."
+              style="height: 39vh"
+            />
+            <div class="card-body text-left">
+              <h5
+                class="card-title"
+                style="color: #16610e; font-size: 1, 25rem; font-weight: 700"
+              >
+                Kote fish
+              </h5>
+              <p class="card-text" style="color: #083503; font-size: 14px">
+                Freshly caught and frozen at peak quality to lock in rich flavor
+                and nutrients. Perfect for frying, or stewing a true seafood
+                favorite for every meal.
+              </p>
+              <div class="size">
+                <button>500g Pack</button>
+                <button>Wild Caught</button>
+              </div>
+              <div
+                class="price-section"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-top: 15px;
+                "
+              >
+                <div class="pricing">
+                  <p
+                    class="price"
+                    style="color: #16610e; font-size: 1rem; font-weight: 700"
+                  >
+                    $4.20
+                  </p>
+                  <small class="text-muted" style="color: #083503 !important"
+                    >+ $2 delivery</small
+                  >
+                </div>
+                <button class="btn btn-cart">
+                  <i class="bi bi-cart"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./assets/images/shrimp.jpg"
+              class="card-img-top"
+              alt="..."
+              style="height: 39vh"
+            />
+            <div class="card-body text-left">
+              <h5
+                class="card-title"
+                style="color: #16610e; font-size: 1, 25rem; font-weight: 700"
+              >
+                Shrimp
+              </h5>
+              <p class="card-text" style="color: #083503; font-size: 14px">
+                Freshly caught and flash-frozen to seal in taste and texture —
+                our shrimp are perfect for grilling, stir-frying, or adding a
+                touch of seafood luxury to any meal.
+              </p>
+              <div class="size">
+                <button>500g Pack</button>
+                <button>Wild Caught</button>
+              </div>
+              <div
+                class="price-section"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-top: 15px;
+                "
+              >
+                <div class="pricing">
+                  <p
+                    class="price"
+                    style="color: #16610e; font-size: 1rem; font-weight: 700"
+                  >
+                    $7.20
+                  </p>
+                  <small class="text-muted" style="color: #083503 !important"
+                    >+ $2 delivery</small
+                  >
+                </div>
+                <button class="btn btn-cart">
+                  <i class="bi bi-cart"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/images/titus.jpg"
+              class="card-img-top"
+              alt="..."
+              style="height: 39vh"
+            />
+            <div class="card-body text-left">
+              <h5
+                class="card-title"
+                style="color: #16610e; font-size: 1, 25rem; font-weight: 700"
+              >
+                Titus
+              </h5>
+              <p class="card-text" style="color: #083503; font-size: 14px">
+                Our frozen titus fish delivers the authentic taste of the ocean
+                — firm, flavorful, and frozen at peak freshness to preserve
+                every bite of goodness.
+              </p>
+              <div class="size">
+                <button>500g Pack</button>
+                <button>Wild Caught</button>
+              </div>
+              <div
+                class="price-section"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-top: 15px;
+                "
+              >
+                <div class="pricing">
+                  <p
+                    class="price"
+                    style="color: #16610e; font-size: 1rem; font-weight: 700"
+                  >
+                    $12.20
+                  </p>
+                  <small class="text-muted" style="color: #083503 !important"
+                    >+ $2 delivery</small
+                  >
+                </div>
+                <button class="btn btn-cart">
+                  <i class="bi bi-cart"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--sea foods ends-->
+
+    <!---vegetables-->
+
+    <div class="container-fluid mt-5 ">
+      <div class="row row-cols-1 row-cols-md-4 g-4" id="vegetable">
+        <div class="col">
+          <div class="card-side mt-3">
+            <!---empty-->
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./assets/images/sweetcorn.jpg"
+              class="card-img-top"
+              alt="..."
+              style="height: 39vh"
+            />
+            <div class="card-body text-left">
+              <h5
+                class="card-title"
+                style="color: #16610e; font-size: 1, 25rem; font-weight: 700"
+              >
+                Sweetcorn
+              </h5>
+              <p class="card-text" style="color: #083503; font-size: 14px">
+                Enjoy farm-fresh sweetness all year round with our premium
+                canned sweetcorn — rich in fiber, full of flavor, and ready to
+                serve in seconds.
+              </p>
+              <div class="size">
+                <button>Organic</button>
+                <button>1kg Pack</button>
+              </div>
+              <div
+                class="price-section"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-top: 15px;
+                "
+              >
+                <div class="pricing">
+                  <p
+                    class="price"
+                    style="color: #16610e; font-size: 1rem; font-weight: 700"
+                  >
+                    $4.50
+                  </p>
+                  <small class="text-muted" style="color: #083503 !important"
+                    >+ $2 delivery</small
+                  >
+                </div>
+                <button class="btn btn-cart">
+                  <i class="bi bi-cart"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./assets/images/cabbage.jpg"
+              class="card-img-top"
+              alt="..."
+              style="height: 39vh"
+            />
+            <div class="card-body text-left">
+              <h5
+                class="card-title"
+                style="color: #16610e; font-size: 1, 25rem; font-weight: 700"
+              >
+                Cabbage
+              </h5>
+              <p class="card-text" style="color: #083503; font-size: 14px">
+                Packed with vitamins and freshness, our frozen cabbage brings
+                farm-fresh flavor straight to your kitchen — ready to cook in
+                minutes.
+              </p>
+              <div class="size">
+                <button>Organic</button>
+                <button>1kg Pack</button>
+              </div>
+              <div
+                class="price-section"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-top: 15px;
+                "
+              >
+                <div class="pricing">
+                  <p
+                    class="price"
+                    style="color: #16610e; font-size: 1rem; font-weight: 700"
+                  >
+                    $5.00
+                  </p>
+                  <small class="text-muted" style="color: #083503 !important"
+                    >+ $2 delivery</small
+                  >
+                </div>
+                <button class="btn btn-cart">
+                  <i class="bi bi-cart"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/images/onions.jpg"
+              class="card-img-top"
+              alt="..."
+              style="height: 39vh"
+            />
+            <div class="card-body text-left">
+              <h5
+                class="card-title"
+                style="color: #16610e; font-size: 1, 25rem; font-weight: 700"
+              >
+                Onions
+              </h5>
+              <p class="card-text" style="color: #083503; font-size: 14px">
+                Our frozen onions are freshly prepared and flash-frozen to save
+                you time in the kitchen — no peeling, no chopping, just pure
+                flavor.
+              </p>
+              <div class="size">
+                <button>Organic</button>
+                <button>1kg Pack</button>
+              </div>
+              <div
+                class="price-section"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-top: 15px;
+                "
+              >
+                <div class="pricing">
+                  <p
+                    class="price"
+                    style="color: #16610e; font-size: 1rem; font-weight: 700"
+                  >
+                    $2.50
+                  </p>
+                  <small class="text-muted" style="color: #083503 !important"
+                    >+ $2 delivery</small
+                  >
+                </div>
+                <button class="btn btn-cart">
+                  <i class="bi bi-cart"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---vegetables end-->
+
+    <!--footer-->
+    <footer class="footer" style="margin-top: 60px">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Brand Info -->
+          <div class="col-md-4">
+            <div class="footer-logo">
+              Frozen<span style="color: #fff">Foods</span>
+            </div>
+            <p>
+              Delivering freshness in every frozen bite. Premium quality meals,
+              snacks, and ingredients — frozen to perfection for your
+              convenience.
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <!-- Quick Links -->
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#benefits">Benefits</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <div class="icons">
+              <p>
+                <i class="bi bi-geo-alt-fill" style="color: #f97a00"></i> 123
+                Faniyi street, Ikorodu Lagos
+              </p>
+              <p>
+                <i class="bi bi-telephone-fill" style="color: #f97a00"></i> +234
+                7072209736
+              </p>
+              <p>
+                <i class="bi bi-envelope-fill" style="color: #f97a00"></i>
+                support@frozenfoods.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Message Area Section -->
+
+        <!---bottom-->
+        <div class="footer-bottom mt-4">
+          <p>
+            &copy; 2025 Frozen Foods. All Rights Reserved. | Designed with ❤️ by
+            FrozenFoods Team
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!---footer end-->
+
+    <!---js cdn-->
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,308 @@
+ @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --primary-color: #16610e;
+  --primary-color-light: #affca7;
+  --primary-color-dark: #083503;
+  --secondary-color: #f97a00;
+  --bg-color-01: #fed16a;
+  --bg-color-02: #fff4a4;
+}
+
+
+/* navbar */
+body {
+  font-family: "Raleway", sans-serif !important;
+}
+
+.navbar {
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.navbar-brand {
+  font-weight: 700;
+  color: var(--bg-color-01) !important;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+.btn-primaryME {
+  background-color: var(--bg-color-01) !important;
+  color: #232323 !important;
+  font-weight: 700 !important;
+}
+.btn-primaryME:hover {
+  background-color: var(--secondary-color) !important;
+  color: #232323 !important;
+}
+/* Hero Section */
+    .about-hero {
+      background: url('./assets/images/ab=top.jpg') no-repeat center center/cover;
+      height: 60vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white !important;
+    }
+      .about-hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+    .about-hero h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 3rem;
+      font-weight: 800;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5) !important;
+    }
+     /* About Content */
+    .about-content {
+      padding: 80px 0;
+      background-color: var(--bg-color-02) !important;
+    }
+     .about-text h2 {
+      font-weight: 700;
+      color: var(--primary-color) !important  
+    }
+     .about-text p {
+      color: var(--primary-color-dark) !important;
+      font-size: 1rem;
+      margin-top: 15px;
+      line-height: 1.8;
+      font-style: italic;
+      
+    }
+      /* Mission & Vision */
+    .mission-section {
+      background-color: var(--bg-color-02) !important;
+      padding: 60px 0;
+    }
+     .mission-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      padding: 40px 25px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+      .mission-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+      .mission-card i {
+      font-size: 3rem;
+      color: var(--secondary-color)!important;
+      margin-bottom: 20px;
+    }
+     .mission-card h5 {
+      font-weight: 700;
+      color: var(--primary-color)!important;
+      margin-bottom: 15px;
+    }
+     .mission-card p {
+      color: var(--primary-color-dark)!important;
+      font-size: 0.95rem;
+    }
+     /* Why Choose Us */
+    .why-choose {
+      padding: 70px 0;
+      background-color: var(--bg-color-01) !important;
+    }
+    
+    .why-choose h2 {
+      text-align: center;
+      color: var(--primary-color) !important;
+      font-weight: 800;
+      margin-bottom: 40px;
+    }
+    
+    .why-item {
+      display: flex;
+      /* align-items: start; */
+      margin-bottom: 20px;
+    }
+      .why-item i {
+      font-size: 1.8rem;
+      color: var(--secondary-color) !important;
+      margin-right: 15px;
+      margin-top: 4px;
+    }
+     .why-item p {
+      color:var(--primary-color-dark)!important;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+
+    /* testimonial  */
+    .header  {
+        text-align: center;
+    }
+    .header h2{
+        font-weight: 800 ;
+        color: var(--primary-color) !important;
+         font-size: 2.3rem;
+    }
+    .header p{
+       color: var(--primary-color-dark) !important;
+         font-size: 1rem;
+    }
+
+    .testimonial-section {
+      padding: 60px 0;
+      background-color: var(--bg-color-02) !important;
+    }
+
+    .testimonial-card {
+      background:white !important;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      transition: all 0.3s ease;
+      margin-top: 40px !important;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    .testimonial-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid var(--primary-color) !important;
+    }
+
+    .testimonial-card h5 {
+      font-weight: 700;
+      color: var(--primary-color) !important;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-card p {
+      font-size: 0.95rem;
+      color: var(--primary-color-dark) !important;
+    }
+    
+
+    .testimonial-card .stars {
+      color: #ffc107;
+      margin-bottom: 15px;
+    }
+
+    /* Message Area  */
+.message-area {
+  background-color: var(--bg-color-02) !important;
+  padding: 60px 0;
+  /* border-top: 3px solid #0dcaf0 !important; */
+  /* border-bottom: 3px solid #0dcaf0 !important; */
+  /* border-radius: 20px; */
+}
+.message-box {
+  background: white !important;
+  border-radius: 20px !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 40px !important;
+}
+.message-title {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: var(--primary-color) !important;
+  margin-bottom: 15px;
+}
+.text-h6 {
+  color:var(--primary-color-dark) !important;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+.form-control1 {
+  border-radius: 30px !important;
+  padding: 5px !important;
+  border: 1px solid var(--primary-color) !important;
+}
+.btn-submit {
+  background-color: var(--bg-color-01) !important;
+  color: black !important;
+  border-radius: 30px !important;
+  padding: 10px 25px;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-submit:hover {
+  background-color: var(--secondary-color) !important;
+  transform: translateY(-2px);
+  color: black !important;
+}
+
+     
+    /* footer */
+     .footer {
+  background-color:var(--primary-color) !important;
+  color: white !important;
+  padding: 60px 0 20px;
+  position: relative;
+}
+.footer h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white !important;
+}
+.footer p,
+.footer a {
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.footer a:hover {
+  color: var(--secondary-color) !important;
+  text-decoration: underline;
+
+}
+.footer .social-icons a {
+  display: inline-block;
+  color: var(--secondary-color) !important;
+  background: white !important;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+.footer .social-icons a:hover {
+  background: var(--bg-color-02) !important;
+  color: white;
+  transform: scale(1.1);
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 15px;
+}
+

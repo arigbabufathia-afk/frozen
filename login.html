@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frozen Foods - Login</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <style>
+    body {
+      background:  #fff4a4;
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .login-wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .login-card {
+      background: #fff4a4;
+      padding: 40px 35px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 0.7s ease-in-out;
+    }
+
+    .login-card h2 {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .login-card p {
+      color: #6c757d;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .btn-primary {
+      background: #28a745;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: #218838;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="login-wrapper">
+  <div class="login-card">
+
+    <h2 class="text-center">Welcome Back</h2>
+    <p class="text-center">Login to continue shopping frozen foods.</p>
+
+    <form>
+      <!-- Email -->
+      <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Password -->
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" placeholder="Enter your password" required>
+      </div>
+
+      <!-- Remember Me -->
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="rememberCheck">
+        <label class="form-check-label" for="rememberCheck">
+          Remember me
+        </label>
+      </div>
+
+      <!-- Login Button -->
+      <button type="submit" class="btn btn-primary w-100 py-2">Login</button>
+
+      <!-- Forgot Password -->
+      <div class="text-center mt-3">
+        <a href="#" class="text-success small">Forgot your password?</a>
+      </div>
+
+      <!-- Sign Up Redirect -->
+      <div class="text-center mt-3">
+        <small>Don't have an account? <a href="sign.html" class="text-success">Sign Up</a></small>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

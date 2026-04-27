@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="product1.css" />
+
+    <!-- css-boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!--icon-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          >FrozenF <span style="color: #f97a00">oo</span>ds</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav me-3">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="index.html"
+                style="text-decoration: underline"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product1.html">products</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primaryME">Order Now</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+   <!---inner-navbar-->
+    <div class="container-fluid">
+      <div class="container mt-3">
+        <div
+          class="icon1"
+          style="display: flex !important; align-items: center"
+        >
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="
+                background-color: transparent;
+                color: #083503;
+                border: none;
+              "
+            >
+              <span><i class="bi bi-list"></i> Shop by categories</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#frozenmeat">Frozen meat</a>
+              </li>
+              <li><a class="dropdown-item" href="#seafoods">Sea foods</a></li>
+              <li><a class="dropdown-item" href="#vegetable">Vegetables</a></li>
+            </ul>
+          </div>
+
+          <!-- Search Bar -->
+          <form class="search-bar" style="flex-grow: 1">
+            <input
+              class="seachbar"
+              type="search"
+              placeholder="Search your product here "
+              aria-label="Search"
+              style="
+                width: 50vw;
+                padding: 10px;
+                border-radius: 20px;
+                border: none;
+                background-color: white;
+                color: black;
+              "
+            />
+          </form>
+
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="
+                background-color: transparent;
+                color: #083503;
+                border: none;
+              "
+            >
+              <i class="bi bi-person-add" style="font-size: 1.4rem"></i>
+            </button>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="sign.html">sign up</a></li>
+              <li><a class="dropdown-item" href="#">others</a></li>
+            </ul>
+          </div>
+
+          <!-- Cart Icon -->
+          <div class="cart" style="font-size: 20px">
+            <i class="bi bi-cart-fill"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----inner navbar end-->
+
+
+
+
+
+    <div class="container-fluid text-center">
+      <div class="row " >
+        <div
+          class="col-lg-2 col-12"
+          style="background: #fff; ; overflow-y: scroll; "
+        >
+          <div class="logo">
+            <h2>Product</h2>
+          </div>
+          <ul class="list-group border-0 text-left">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+        <div class="col-lg-10 col-12" style=" overflow-y: auto; height: 100vh;">
+          <div class="row g-4 p-4" id="card-container-p">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- js -->
+     <script src="./data.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ 
+  </body>
+</html>

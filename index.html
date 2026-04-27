@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrozenFoods Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+      <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!---navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">FrozenF <span style="color: #f97a00;">oo</span>ds</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" style="text-decoration: underline;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="product1.html">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-primaryME">Order Now</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+   <!----carousel-->
+  <div id="frozenHeroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#frozenHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#frozenHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#frozenHeroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url(./assets/images/bg.jpg);">
+        <div class="carousel-caption">
+          <h1>Premium Frozen Meats</h1>
+          <p>Fresh, frozen to perfection, and ready to cook.</p>
+          <a href="#" class="btn btn-frozen">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url(./assets/images/veggies.jpg);">
+        <div class="carousel-caption">
+          <h1>Delicious Frozen Vegetables</h1>
+          <p>Keep your meals healthy and convenient with our frozen veggie range.</p>
+          <a href="#" class="btn btn-frozen">Explore Products</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="background-image: url(./assets/images/bg2.jpg);">
+        <div class="carousel-caption">
+          <h1>Dive into Freshness</h1>
+          <p>From juicy prawns to tender fish fillets, our frozen seafood brings you the rich flavors of the sea, anytime you crave it.</p>
+          <a href="#" class="btn btn-frozen">View Menu</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#frozenHeroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#frozenHeroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--carousel ends-->
+
+    <!--Benefit--->
+    <section class="benefits-section" id="benefits">
+    <div class="container">
+
+      <div class="section-title1">
+        <h2>Why Choose Our Frozen Foods?</h2>
+        <p>Discover the key benefits that make our frozen products fresh, healthy, and convenient.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Benefit 1 -->
+        <div class="col-md-4">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="bi bi-snow"></i>
+            </div>
+            <h5 class="benefit-title">Freshness Locked In</h5>
+            <p class="benefit-text">Our quick-freeze technology preserves nutrients and taste, ensuring every bite feels freshly made.</p>
+          </div>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="col-md-4">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <h5 class="benefit-title">Convenient & Time-Saving</h5>
+            <p class="benefit-text">Enjoy restaurant-quality meals ready in minutes — perfect for busy lifestyles and families on the go.</p>
+          </div>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="col-md-4">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="bi bi-heart-pulse"></i>
+            </div>
+            <h5 class="benefit-title">Nutritious & Safe</h5>
+            <p class="benefit-text">We ensure high food safety standards and maintain nutritional value through our cold-chain process.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--benefit ends-->
+
+  <!---Featured Product-->
+   <section class="products-section" id="products">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Featured Frozen Products</h2>
+        <p>Explore our most popular frozen delights — ready to cook, serve, and enjoy.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Product 1 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card product-card">
+            <img src="./assets/images/chicken wings.jpg" alt="Frozen Chicken Wings">
+            <div class="product-body">
+              <h5 class="product-title">Frozen Chicken Wings</h5>
+               <div class="product-tags">
+              <span>High Protein</span> <span>Ready to Cook</span>
+            </div>
+              <p class="product-text">Crispy and juicy wings, frozen fresh for your convenience.</p>
+                 <div class="size">
+              <button>1kg Pack</button>
+              <button style="padding-right:   10px;">Halal</button>
+            </div>
+            <div class="price-section"  style="display: flex; justify-content: space-between;align-items: center;margin-top: 15px;">
+              <div class="pricing">
+               <p class="product-price">$12.99</p>
+                <small class="text-muted" style="color:#083503  !important;">+ $2 delivery</small>
+              </div>
+               <button class="btn btn-cart"><i class="bi bi-cart"></i> Add to Cart</button> 
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card product-card">
+            <img src="./assets/images/mixed veggies.jpg" alt="Frozen Mixed Vegetables">
+            <div class="product-body">
+              <h5 class="product-title">Mixed Vegetables Pack</h5>
+                <div class="product-tags">
+              <span>Healthy</span> <span>Vegan</span> <span>Fresh</span>
+            </div>
+              <p class="product-text">A healthy mix of peas, carrots, and corn — ready to cook anytime.</p>
+               <div class="size">
+              <button>Organic</button>
+              <button>1kg Pack</button>
+            </div>
+         <div class="price-section"  style="display: flex; justify-content: space-between;align-items: center;margin-top: 15px; ">
+              <div class="pricing">
+                 <p class="product-price">$6.50</p> 
+                <small class="text-muted"  style="color:#083503  !important;">+ $2 delivery</small>
+              </div>
+              <button class="btn btn-cart"><i class="bi bi-cart"></i> Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card product-card">
+            <img src="./assets/images/tilapia fish.jpg " alt="Frozen Pizza">
+            <div class="product-body">
+              <h5 class="product-title">Frozen Tilapia Fish  </h5>
+               <div class="product-tags">
+              <span>Seafood</span> <span>Fresh</span>
+            </div>
+              <p class="product-text">Fresh, flaky white fish fillets frozen at peak freshness — perfect for grilling or baking.</p>
+               <div class="size" >
+              <button>500g Pack</button>
+              <button>Wild Caught</button>
+               </div>
+            <div class="price-section" style="display: flex; justify-content: space-between;align-items: center;margin-top: 15px; ">
+             <div class="pricing">
+              <p class="product-price">$10.99</p>
+                <small class="text-muted" style="color:#083503  !important;">+ $2 delivery</small>
+             </div>
+               <button class="btn btn-cart"><i class="bi bi-cart"></i> Add to Cart</button>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!---Testimonial section-->
+       <section class="testimonial-section">
+    <div class="container">
+      <div class="header">
+        <h2>What Our Customers Say</h2>
+        <p>We’re proud to serve quality frozen products that our customers love and trust.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Testimonial 1 -->
+        <div class="col-md-4  ">
+          <div class="card testimonial-card text-center rounded-4" style="height: 45vh;">
+            <p>“Frozen Foods has completely changed how we manage our restaurant supply. The freshness and quality of their frozen Meats are unmatched!”</p>
+          <div class="stars">
+              ★★★★★
+            </div>
+               <div class="tesimg" style="display: flex; gap: 15px;">
+            <img src="./assets/images/t1.png" alt="Customer 1"><span> <h5>Sarah Johnson</h5>
+            <p>Restaurant Owner</p></span>
+           </div>
+             
+          
+
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+
+
+         <div class="col-md-4">
+          <div class="card testimonial-card text-center rounded-4 " style="height: 45vh;">
+            <p>“I always buy their frozen vegetables. They’re crisp, colorful, and perfect for my family dinners every week.”</p><br>
+            <div class="stars">
+              ★★★★★
+            </div>
+            <div class="tesimg" style="display: flex; gap: 15px;">
+              <img src="./assets/images/t2.jpg" alt="Customer 2"  ><span> <h5>Linda Okoro</h5>
+            <p>Busy Professional</p></span>
+          </div>
+          </div>
+        </div>
+        
+
+        <!-- Testimonial 3 -->
+       <div class="col-md-4">
+          <div class="card testimonial-card text-center rounded-4" style="height: 45vh;">
+             <p>“Their seafood section is amazing! The frozen shrimps taste just like freshly caught ones. Highly recommended!”</p><br>
+            <div class="stars">
+              ★★★★★
+            </div>
+            <div class="tesimg" style="display: flex; gap: 15px;">
+                 <img src="./assets/images/t3.jpeg" alt="Customer 3"><span><h5>Michael Ade</h5>
+             <p>Home cook</p></span>
+            </div>
+           
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!---Testimonial end-->
+
+ <!---message arrea-->
+   <section class="message-area">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="message-box text-center">
+            <h2 class="message-title">Have Questions or Need Assistance?</h2>
+            <h6 class="text-h6">Send us a quick message — we’d love to hear from you! Our team is always ready to help with product inquiries, orders, or feedback.</h6>
+            <form class="row g-3 justify-content-center">
+              <div class="col-md-5">
+                <input type="text" class="form-control1" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-5">
+                <input type="email" class="form-control1" placeholder="Your Email" required>
+              </div>
+              <div class="col-10">
+                <textarea class="form-control1" rows="3" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--footer section-->
+    <footer class="footer">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Brand Info -->
+        <div class="col-md-4">
+          <div class="footer-logo">Frozen<span style="color:#fff;">Foods</span></div>
+          <p>Delivering freshness in every frozen bite. Premium quality meals, snacks, and ingredients — frozen to perfection for your convenience.</p>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product1.html">Products</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <div class="icons">
+          <p><i class="bi bi-geo-alt-fill" style="color:  #f97a00;"></i> 123 Faniyi street, Ikorodu Lagos</p>
+          <p><i class="bi bi-telephone-fill" style="color:  #f97a00;"></i> +234 7072209736</p>
+          <p><i class="bi bi-envelope-fill" style="color:  #f97a00;"></i> support@frozenfoods.com</p>
+          </div>
+        </div>
+      </div>
+
+
+
+        <!-- Message Area Section -->
+
+      <!---bottom-->
+       <div class="footer-bottom mt-4">
+        <p>&copy; 2025 Frozen Foods. All Rights Reserved. | Designed with ❤️ by FrozenFoods Team</p>
+      </div>
+    </div>
+  </footer>
+
+      
+
+
+
+    <!--JS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
